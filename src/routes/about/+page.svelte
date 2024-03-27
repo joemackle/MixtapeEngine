@@ -1,26 +1,36 @@
+<script>
+	import plan from '$lib/images/plan.jpg';
+</script>
+
 <svelte:head>
 	<title>About</title>
-	<meta name="description" content="About this app" />
+	<meta name="description" content="About the Mixtape Engine" />
 </svelte:head>
 
 <div class="text-column">
-	<h1>About this app</h1>
+	<h1>About the Mixtape Engine</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		<strong>The Mixtape Engine</strong> is a <a href="https://kit.svelte.dev">SvelteKit</a> app. <br>
+		Below you can view an image that was drawn up to demonstrate a possible design of this web app.
 	</p>
 
-	<pre>npm create svelte@latest</pre>
+	<span class="plan">
+		<picture>
+			<img src={plan} alt="Original drawn website design" />
+		</picture>
+	</span>
 
 	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
+		<a href="/">Go back to the Mixtape Engine</a>
 	</p>
 </div>
+
+<style>
+	.plan img {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		display: block;
+  }
+</style>
