@@ -1,5 +1,6 @@
 <script>
 	import plan from '$lib/images/plan.jpg';
+	import {base} from '$app/paths';
 </script>
 
 <svelte:head>
@@ -22,7 +23,7 @@
 	</span>
 
 	<p>
-		<a href="/">Go back to the Mixtape Engine</a>
+		<a href="{base}/">Go back to the Mixtape Engine</a>
 	</p>
 </div>
 
