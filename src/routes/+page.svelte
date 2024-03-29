@@ -1,5 +1,6 @@
 <script>
 	import Counter from './Counter.svelte';
+	import {base} from '$app/paths';
 </script>
 
 <svelte:head>
@@ -8,7 +9,7 @@
 </svelte:head>
 
 <section>
-	<p>soon, this will be the home page of the app. <br> click <a href="/about">here</a> to see the about page</p>
+	<p>soon, this will be the home page of the app. <br> click <a href="{base}/about">here</a> to see the about page</p>
 	<Counter />
 </section>
 

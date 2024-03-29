@@ -6,9 +6,9 @@
 <div class="app">
 	<Header />
 
-	<main>
+	<maixn>
 		<slot />
-	</main>
+	</maixn>
 </div>
 
 <style>

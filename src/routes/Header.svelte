@@ -5,7 +5,7 @@
 <header>
 	<div class="titlebar">
 		<ul>
-			The Mixtape Engine
+			<h1>The Mixtape Engine</h1>
 		</ul>
 	</div>
 
