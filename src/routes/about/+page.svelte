@@ -1,6 +1,7 @@
 <script>
 	import plan from '$lib/images/plan.jpg';
 	import {base} from '$app/paths';
+	import github from '$lib/images/github.svg';
 </script>
 
 <svelte:head>
@@ -9,7 +10,13 @@
 </svelte:head>
 
 <div class="text-column">
-	<h1>About the Mixtape Engine</h1>
+	<h1>
+		About the Mixtape Engine
+	</h1>
+
+	<a href="https://github.com/joemackle/MixtapeEngine" class="github">
+		<img src={github} alt="GitHub" />
+	</a>
 
 	<p>
 		<strong>The Mixtape Engine</strong> is a <a href="https://kit.svelte.dev">SvelteKit</a> app. <br>
@@ -27,10 +34,14 @@
 	</p>
 </div>
 
-<style>
+<style lang="postcss">
+	.github {
+      width: 3em;
+      height: 3em;
+	}
 	.plan img {
-		width: 100%;
-		height: 100%;
+		width: 80%;
+		height: 80%;
 		top: 0;
 		display: block;
   }
