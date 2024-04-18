@@ -7,9 +7,8 @@ a web app that considers user inputs such as danceability, instrumentalness, and
 
 ## Building
 
-To create a production version of your app:
-
 ```bash
+npm install
 npm run build
 ```
 

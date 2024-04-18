@@ -1,6 +1,5 @@
 <script>
 	//import {base} from '$app/paths';
-  import ParseWrapper from './ParseWrapper.svelte';
 </script>
 
 <svelte:head>
@@ -9,7 +8,6 @@
 </svelte:head>
 
 <section>
-  <ParseWrapper />
 </section>
 
 <style lang="postcss">
