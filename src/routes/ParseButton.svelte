@@ -1,11 +1,12 @@
 <script>
   import {parseCsv} from './parseCsv.js';
-  export let weights = [];
+  export let weights;
+  export let result;
 
   async function handleParse() {
     const url = "/dataset.csv";
-    const parsedData = await parseCsv(url, weights);
-    console.log(parsedData);
+    result = await parseCsv(url, weights);
+    console.log(result);
   }
 </script>
 
