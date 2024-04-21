@@ -7,9 +7,9 @@
 <div class="app">
 	<Header />
 
-	<maixn>
+	<main>
 		<slot />
-	</maixn>
+	</main>
 </div>
 
 <style>

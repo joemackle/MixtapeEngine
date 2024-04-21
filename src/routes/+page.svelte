@@ -1,5 +1,6 @@
 <script>
 	//import {base} from '$app/paths';
+	import Rank from './Rank.svelte';
 </script>
 
 <svelte:head>
@@ -8,7 +9,19 @@
 </svelte:head>
 
 <section>
+	<div class="grid gap-6">
+		<div class="row-span-2">
+			<Rank />
+		</div>
+		<div class="row-span-2">
 
+		</div>
+		<div>
+
+		</div>
+		<div class="col-start-3">
+
+	</div>
 </section>
 
 <style lang="postcss">
