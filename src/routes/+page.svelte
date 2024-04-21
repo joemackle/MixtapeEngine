@@ -1,6 +1,7 @@
 <script>
 	//import {base} from '$app/paths';
 	import Rank from './Rank.svelte';
+	import Playlist from './Playlist.svelte';
 </script>
 
 <svelte:head>
@@ -13,14 +14,18 @@
 		<div class="row-span-2">
 			<Rank />
 		</div>
-		<div class="row-span-2">
 
+		<div class="row-span-2">
+			<Playlist />
 		</div>
+
 		<div>
 
 		</div>
+
 		<div class="col-start-3">
 
+		</div>
 	</div>
 </section>
 

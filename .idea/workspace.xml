@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67ede98-e659-4826-b219-ccaa99c2a28a" name="Changes" comment="Tailwind integration">
-      <change afterPath="$PROJECT_DIR$/src/routes/ParseButton.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/ParseWrapper.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/WeightsTable.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/parseDatabase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/parseCsv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Song.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Playlist.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Playlist.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,7 @@
         <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Playlist.svelte" />
+        <option value="Song" />
       </list>
     </option>
   </component>
@@ -46,7 +48,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/joeyp/Documents/uflorida/24spring/cop3530/MixtapeEngine",
     "list.type.of.created.stylesheet": "CSS",
@@ -112,7 +114,7 @@
       <workItem from="1713326044929" duration="344000" />
       <workItem from="1713393865378" duration="1632000" />
       <workItem from="1713396198587" duration="4512000" />
-      <workItem from="1713658763488" duration="6547000" />
+      <workItem from="1713658763488" duration="18706000" />
     </task>
     <task id="LOCAL-00001" summary="readme, changes to base demo">
       <option name="closed" value="true" />
