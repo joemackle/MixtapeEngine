@@ -15,17 +15,17 @@ async function parseCsv(url, weights) {
         header: true,
         dynamicTyping: true,
         complete: function(results) {
-          const data = results.data;
+          let data = results.data;
 
           data.forEach(row => {
             row.score = 0;
-            row.score += row.dancability * weights[0];
-            row.score += row.energy * weights[1];
-            row.score += row.speechiness * weights[2];
-            row.score += row.acousticness * weights[3];
-            row.score += row.instrumentalness * weights[4];
-            row.score += row.liveness * weights[5];
-            row.score += row.valence * weights[6];
+            row.score += row.danceability * weights.danceability;
+            row.score += row.energy * weights.energy;
+            row.score += row.speechiness * weights.speechiness;
+            row.score += row.acousticness * weights.acousticness;
+            row.score += row.instrumentalness * weights.instrumentalness;
+            row.score += row.liveness * weights.liveness;
+            row.score += row.valence * weights.valence;
           });
 
           data.sort((a, b) => b.score - a.score);
