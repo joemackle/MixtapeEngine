@@ -32,7 +32,7 @@ async function parseCsv(url, weights, sortingAlgorithm) {
 
           const endTime = performance.now();
           const duration = ((endTime - startTime) * 0.001).toFixed(2) + " s";
-          resolve({ data: data, duration: duration });
+          resolve({ data: data.splice(0, 10), duration: duration });
         },
         error: function(error) {
           reject(new Error("Parsing error: " + error.message));
