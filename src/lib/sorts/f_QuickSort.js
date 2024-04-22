@@ -47,3 +47,5 @@ function partition(arr, low, high) {
         arr[down] = change;
     }
 }
+
+export { quickSort };
