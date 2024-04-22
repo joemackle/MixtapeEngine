@@ -16,7 +16,8 @@ async function parseCsv(url, weights, sortingAlgorithm) {
         header: true,
         dynamicTyping: true,
         complete: function(results) {
-          let data = results.data;
+          // using a subset of 25k rows
+          let data = results.data.splice(0, 25000);
 
           data.forEach(row => {
             row.score = 0;
@@ -34,8 +35,8 @@ async function parseCsv(url, weights, sortingAlgorithm) {
           const endTime = performance.now();
           const duration = ((endTime - startTime) * 0.001).toFixed(2) + " s";
 
-          let editPlaylist = [{songName: "", artist: "", track_id: ""}]; editPlaylist.length = 0;
-          data.splice(0,10).forEach(row => {editPlaylist.push({songName: row.track_name, artist: row.artists, track_id: row.track_id});})
+          let editPlaylist = [{ songName: "", artist: "", track_id: "" }]; editPlaylist.length = 0;
+          data.splice(0, 10).forEach(row => { editPlaylist.push({ songName: row.track_name, artist: row.artists, track_id: row.track_id }); })
           playlist.set(editPlaylist);
 
           resolve({ data: data.splice(0, 10), duration: duration });
