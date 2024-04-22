@@ -17,6 +17,19 @@ async function parseCsv(url, weights) {
         complete: function (results) {
           let data = results.data;
 
+          /* map: is an array method that createa a new array.
+          here we are taking in each element with "row", and taking in the 
+          index of each element as "index". When we return, we are returning a new entery
+          in the array. you can see here that each entery is an oject literal. key is 
+          the index of the song && value is the score. the soring algorithms will sort the values. */
+
+          // let data = results.data.map( (row, index) => {
+          //   return {
+          //     index: index,
+          //     score: 0,
+          //   }
+          // });
+
           data.forEach(row => { // [ [1, 2, 3, 4, 5, 6, 7], [], [], ... 114,000] ]
             row.score = 0;
             row.score += row.danceability * weights.danceability;
