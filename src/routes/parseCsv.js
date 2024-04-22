@@ -17,7 +17,7 @@ async function parseCsv(url, weights) {
         complete: function (results) {
           let data = results.data;
 
-          /* map: is an array method that createa a new array.
+          /* map: is an array method (takes in fucntion as parameter) that createa a new array.
           here we are taking in each element with "row", and taking in the 
           index of each element as "index". When we return, we are returning a new entery
           in the array. you can see here that each entery is an oject literal. key is 
