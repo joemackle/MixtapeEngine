@@ -21,3 +21,5 @@ function partition(arr, low, high) {
     let pivotIndex = Math.floor(Math.random() * (arr.length - 1));
     let pivot = arr[pivotIndex];
 }
+
+export { quickSort };
