@@ -1,12 +1,12 @@
 <script>
+	import { playlistSortOp } from '$lib/stores.js';
+
 	export let sortOptions = [
 		"Artist",
 		"Best Fit",
 		"Genre",
 		"Song Length",
 	]
-
-	export let selectedOption = "Best Fit";
 
 	async function handleSort() {
 		// going to have to use svelte store
@@ -22,11 +22,13 @@
 		<ul role="list">
 			{#each sortOptions as option}
 				<li>
-					<input type="radio" id={option} value={option} bind:group={selectedOption} on:change={handleSort}>
+					<input type="radio" id={option} value={option} bind:group={$playlistSortOp} on:change={handleSort}>
 					<label for={option}>{option}</label>
 				</li>
 			{/each}
 		</ul>
+
+		{$playlistSortOp}
 
 	</div>
 </div>
