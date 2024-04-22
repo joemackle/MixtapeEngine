@@ -1,4 +1,5 @@
 import Papa from 'papaparse';
+import { playlist } from '$lib/stores.js';
 
 async function parseCsv(url, weights, sortingAlgorithm) {
   const startTime = performance.now();
@@ -32,6 +33,11 @@ async function parseCsv(url, weights, sortingAlgorithm) {
 
           const endTime = performance.now();
           const duration = ((endTime - startTime) * 0.001).toFixed(2) + " s";
+
+          let editPlaylist = [{songName: "", artist: "", track_id: ""}]; editPlaylist.length = 0;
+          data.splice(0,10).forEach(row => {editPlaylist.push({songName: row.track_name, artist: row.artists, track_id: row.track_id});})
+          playlist.set(editPlaylist);
+
           resolve({ data: data.splice(0, 10), duration: duration });
         },
         error: function(error) {

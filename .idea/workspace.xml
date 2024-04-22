@@ -8,6 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Playlist.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Playlist.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/PlaylistSort.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/PlaylistSort.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Song.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Song.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/parseCsv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/parseCsv.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/stores.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +121,7 @@
       <workItem from="1713393865378" duration="1632000" />
       <workItem from="1713396198587" duration="4512000" />
       <workItem from="1713658763488" duration="33518000" />
-      <workItem from="1713806503712" duration="7254000" />
+      <workItem from="1713806503712" duration="12303000" />
     </task>
     <task id="LOCAL-00001" summary="readme, changes to base demo">
       <option name="closed" value="true" />
