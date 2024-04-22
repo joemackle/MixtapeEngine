@@ -51,7 +51,7 @@
 					</select>
 				</form>
 
-        <ParseButton {weights} bind:result />
+        <ParseButton weights={weights} selectedAlgorithm={selectedAlgorithm} bind:result />
 
       </div>
 
