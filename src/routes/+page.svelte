@@ -11,7 +11,7 @@
 
 <section>
 	<div class="grid gap-6">
-		<div class="row-span-2">
+		<div class="row-span-2 max-w-[28rem] min-w-[28rem]">
 			<Rank />
 		</div>
 
@@ -35,6 +35,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex: 0.6;
+		flex: 0;
 	}
 </style>

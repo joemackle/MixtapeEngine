@@ -19,36 +19,42 @@
   }
 
   export let parsedData = result.data;
+
+	export let sortingAlgorithms = [
+		"Quick Sort",
+		"Merge Sort",
+	]
+
+	export let selectedAlgorithm = "Quick Sort";
 </script>
 
-<!-- Card -->
-<div class="block rounded-md bg-white shadow-md dark:bg-neutral-700 text-left">
-
-	<!-- Card body -->
+<div class="block rounded-md bg-white shadow-md transition-shadow duration-200 ease-in-out hover:shadow-indigo-400 dark:bg-neutral-700 text-left">
 	<div class="p-6">
-
-		<!-- Title -->
 		<h5 class="mb-2 text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
 			Rank based on importance:
 		</h5>
-    
-    <div class="text-base text-neutral-500 dark:text-neutral-300">
 
-			<!-- Danceability, Energy, Speechiness, Acousticness, Instrumentalness, Liveness, Valence-->
+    <div class="text-base text-neutral-500 dark:text-neutral-300">
       <WeightSliders bind:weights />
 
-      <div class="flex flex-col items-center justify-items-center mt-4">
+			<div class="grid grid-cols-2 grid-rows-1 gap-4 flex-col mt-8">
+
+				<form class="max-w-sm mx-auto">
+					<select bind:value={selectedAlgorithm} on:change={() => (result.duration = "")} id="sorts" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+						{#each sortingAlgorithms as name}
+							<option value="{name}">{name}</option>
+						{/each}
+					</select>
+				</form>
+
         <ParseButton {weights} bind:result />
         {#if result.duration}
-          <div class="mt-2 text-sm font-medium text-gray-900 dark:text-white">Parsing took {result.duration}</div>
+          <div class="mt-2 object-right text-sm font-medium text-gray-900 dark:text-white">Parsing with {selectedAlgorithm} took {result.duration}</div>
         {/if}
 
       </div>
-
     </div>
-
 	</div>
-
 </div>
 
 

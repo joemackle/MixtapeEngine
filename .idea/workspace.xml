@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67ede98-e659-4826-b219-ccaa99c2a28a" name="Changes" comment="Tailwind integration">
-      <change afterPath="$PROJECT_DIR$/src/routes/Song.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Playlist.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Playlist.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Rank.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Rank.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,7 @@
       <workItem from="1713326044929" duration="344000" />
       <workItem from="1713393865378" duration="1632000" />
       <workItem from="1713396198587" duration="4512000" />
-      <workItem from="1713658763488" duration="18706000" />
+      <workItem from="1713658763488" duration="24723000" />
     </task>
     <task id="LOCAL-00001" summary="readme, changes to base demo">
       <option name="closed" value="true" />
