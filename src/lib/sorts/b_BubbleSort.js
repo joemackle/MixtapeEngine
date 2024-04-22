@@ -7,7 +7,7 @@
 function bubbleSort(data) {
   for (let i = 0; i < data.length; i++) {
     let change = 0;
-    for (let j = 0; j < data.length; j++) {
+    for (let j = 0; j < data.length - 1 - i; j++) {
       if (data[j].score < data[j + 1].score) {
         // we swap the items
         let temp = data[j];
