@@ -5,12 +5,13 @@
 // this will return an array from greatest to least score!!!
 function insertionSort(data) {
   for (let i = 1; i < data.length; i++) {
+
     let key = data[i];
     let j = i - 1;
 
     while (key.score > data[j].score && j >= 0) {
       data[j + 1] = data[j];
-      j -= 1;
+      j--;
     }
     data[j + 1] = key;
   }

@@ -18,5 +18,6 @@ function partition(arr, low, high) {
         would cause worst-case performance for nearly-sorted 
         or nearly-reverse-sorted data)" -- Stack Overflow
     */
-    let pivot = arr[low];
+    let pivotIndex = Math.floor(Math.random() * (arr.length - 1));
+    let pivot = arr[pivotIndex];
 }

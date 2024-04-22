@@ -3,50 +3,50 @@
 
 // changes array in place
 function mergeEverything(arr, left, mid, right) {
-  // this create 2 array that hold [left...mid] and [mid+1...right]
-  const leftArraySize = mid - left + 1;
-  const rightArraySize = right - mid;
-  let arrLeft = new Array(leftArraySize);
-  let arrRight = new Array(rightArraySize);
+    // this create 2 array that hold [left...mid] and [mid+1...right]
+    const leftArraySize = mid - left + 1;
+    const rightArraySize = right - mid;
+    let arrLeft = new Array(leftArraySize);
+    let arrRight = new Array(rightArraySize);
 
-  for (let i = 0; i < leftArraySize; i++) {
-    arrLeft[i] = arr[left + i];
-  }
-  for (let k = 0; k < rightArraySize; k++) {
-    arrRight[k] = arr[mid + 1 + k];
-  }
-
-  // merging arrLife && arrRight into "arr that was passed in"!
-  let i = 0;
-  let j = 0;
-  let k = left;
-
-  while (i < leftArraySize && j < rightArraySize) {
-    if (arrLeft[i].score >= arrRight[j].score) {
-      arr[k] = arrLeft[i];
-      i++
+    for (let i = 0; i < leftArraySize; i++) {
+        arrLeft[i] = arr[left + i];
     }
-    else {
-      //code
-      arr[k] = arrRight[j];
-      j++;
+    for (let k = 0; k < rightArraySize; k++) {
+        arrRight[k] = arr[mid + 1 + k];
     }
-    k++;
-  }
 
-  // this is a O(1) time operation because there will only every be 
-  // about 1 more element in each array that needs to be sorted
-  // <-- addes the remaining elements into the array -->
-  while (i < leftArraySize) {
-    arr[k] = arrLeft[i];
-    i++;
-    k++;
-  }
-  while (j < rightArraySize) {
-    arr[k] = arrRight[j];
-    j++;
-    k++;
-  }
+    // merging arrLife && arrRight into "arr that was passed in"!
+    let i = 0;
+    let j = 0;
+    let k = left;
+
+    while (i < leftArraySize && j < rightArraySize) {
+        if (arrLeft[i].score >= arrRight[j].score) {
+            arr[k] = arrLeft[i];
+            i++
+        }
+        else {
+            //code
+            arr[k] = arrRight[j];
+            j++;
+        }
+        k++;
+    }
+
+    // this is a O(1) time operation because there will only every be 
+    // about 1 more element in each array that needs to be sorted
+    // <-- addes the remaining elements into the array -->
+    while (i < leftArraySize) {
+        arr[k] = arrLeft[i];
+        i++;
+        k++;
+    }
+    while (j < rightArraySize) {
+        arr[k] = arrRight[j];
+        j++;
+        k++;
+    }
 }
 
 
@@ -54,14 +54,15 @@ function mergeEverything(arr, left, mid, right) {
 // mergeSort(data, 0, data.length-1)
 function mergeSort(arr, leftSide = 0, rightSide = arr.length - 1) {
 
-  // this if statement is the base case. Breaking the array down to 1 element
-  if (leftSide < rightSide) {
-    let middle = leftSide + ((rightSide - leftSide) / 2);
-    mergeSort(arr, leftSide, middle);
-    mergeSort(arr, middle + 1, rightSide);
+    // this if statement is the base case. Breaking the array down to 1 element
+    if (leftSide < rightSide) {
+        // let middle = leftSide + ((rightSide - leftSide) / 2);
+        let middle = Math.floor(leftSide + ((rightSide - leftSide) / 2));
+        mergeSort(arr, leftSide, middle);
+        mergeSort(arr, middle + 1, rightSide);
 
-    mergeEverything(arr, leftSide, middle, rightSide);
-  }
+        mergeEverything(arr, leftSide, middle, rightSide);
+    }
 }
 
 export { mergeSort };
