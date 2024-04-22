@@ -21,7 +21,7 @@
 			<Playlist />
 		</div>
 
-		<div>
+		<div class="min-w-40">
 			<PlaylistSort />
 		</div>
 
