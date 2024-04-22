@@ -4,6 +4,8 @@
   import { bubbleSort } from '../sorts/b_BubbleSort.js';
   import { insertionSort } from '../sorts/c_InsertionSort.js';
   import { mergeSort } from '../sorts/e_MergeSort.js';
+  import { quickSort } from '../sorts/f_QuickSort.js';
+  import { shellSort } from '../sorts/d_ShellSort.js';
 
 	export let weights;
 	export let result;
