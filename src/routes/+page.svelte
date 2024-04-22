@@ -4,8 +4,6 @@
 	import Playlist from '$lib/components/Playlist.svelte';
 	import PlaylistSort from '$lib/components/PlaylistSort.svelte';
 
-	let playlistComp;
-	let playlistSortComp;
 </script>
 
 <svelte:head>
@@ -20,11 +18,11 @@
 		</div>
 
 		<div class="row-span-2">
-			<Playlist bind:this={playlistComp} />
+			<Playlist />
 		</div>
 
 		<div>
-			<PlaylistSort bind:this={playlistSortComp} />
+			<PlaylistSort />
 		</div>
 
 		<div class="col-start-3">
