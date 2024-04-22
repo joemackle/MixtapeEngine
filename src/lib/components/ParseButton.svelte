@@ -15,7 +15,9 @@
     "Selection Sort": selectionSort,
     "Bubble Sort": bubbleSort,
     "Insertion Sort": insertionSort,
-    "Merge Sort": mergeSort
+    "Merge Sort": mergeSort,
+    "Shell Sort": shellSort,
+    "Quick Sort": quickSort
   }
 
 	async function handleParse() {
