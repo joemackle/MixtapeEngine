@@ -23,12 +23,16 @@
 	export let sortingAlgorithms = [
 		"Quick Sort",
 		"Merge Sort",
+		"Shell Sort",
+		"Selection Sort",
+		"Bubble Sort",
+		"Insertion Sort",
 	]
 
 	export let selectedAlgorithm = "Quick Sort";
 </script>
 
-<div class="block rounded-md bg-white shadow-md transition-shadow duration-200 ease-in-out hover:shadow-indigo-400 dark:bg-neutral-700 text-left">
+<div class="block rounded-md bg-white shadow-md transition-shadow duration-200 ease-in-out hover:shadow-indigo-400 dark:bg-neutral-700 text-left min-h-[30rem]">
 	<div class="p-6">
 		<h5 class="mb-2 text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
 			Rank based on importance:
@@ -48,11 +52,13 @@
 				</form>
 
         <ParseButton {weights} bind:result />
-        {#if result.duration}
-          <div class="mt-2 object-right text-sm font-medium text-gray-900 dark:text-white">Parsing with {selectedAlgorithm} took {result.duration}</div>
-        {/if}
 
       </div>
+
+			{#if result.duration}
+				<div class="mt-2 text-center text-sm font-medium text-gray-900 dark:text-white">Parsing with {selectedAlgorithm} took {result.duration}</div>
+			{/if}
+
     </div>
 	</div>
 </div>

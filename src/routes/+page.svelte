@@ -2,6 +2,10 @@
 	//import {base} from '$app/paths';
 	import Rank from './Rank.svelte';
 	import Playlist from './Playlist.svelte';
+	import PlaylistSort from './PlaylistSort.svelte';
+
+	let playlistComp;
+	let playlistSortComp;
 </script>
 
 <svelte:head>
@@ -16,11 +20,11 @@
 		</div>
 
 		<div class="row-span-2">
-			<Playlist />
+			<Playlist bind:this={playlistComp} />
 		</div>
 
 		<div>
-
+			<PlaylistSort bind:this={playlistSortComp} />
 		</div>
 
 		<div class="col-start-3">

@@ -9,7 +9,27 @@
 			song: 'Song 2',
 			artist: 'Blur',
 		},
+		{
+			song: "Song 3",
+			artist: "Joseph",
+		},
 	];
+
+	export async function sortBy(sort) {
+		if (sort == "Artist") {
+			playlist.sort((a, b) => {
+				if (a.artist.toUpperCase() < b.artist.toUpperCase()) {
+					return -1;
+				}
+				if (a.artist.toUpperCase() > b.artist.toUpperCase()) {
+					return 1;
+				}
+
+				// names must be equal
+				return 0;
+			});
+		}
+	}
 </script>
 
 <div class="block rounded-md bg-white shadow-md transition-shadow duration-200 ease-in-out hover:shadow-indigo-400 dark:bg-neutral-700 text-left">
@@ -17,10 +37,7 @@
 		<h5 class="mb-2 text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
 			Your new playlist...
 		</h5>
-		<p class="mb-2 text-base text-neutral-500 dark:text-neutral-300">
-
-		</p>
-		<div class="flow-root">
+		<div class="flow-root flex">
 			<ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
 				{#each playlist as item, index (item.song)}
 					<Song

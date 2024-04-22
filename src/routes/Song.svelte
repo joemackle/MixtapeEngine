@@ -1,9 +1,9 @@
 <script>
 	import { fade } from 'svelte/transition'
 	import previewIcon from '../lib/images/logo_small.png';
-	export let index;
-	export var name;
-	export let artist;
+	//export let index;
+	export var name = "Song Name";
+	export let artist = "Artist";
 
 	// retrieve cover art using MusicBrainz cover art archive
 
@@ -12,6 +12,7 @@
 		//getCoverArt;
 	}
 </script>
+
 <li class="py-3 sm:py-4" transition:fade>
 	<div class="flex items-center">
 		<div>
