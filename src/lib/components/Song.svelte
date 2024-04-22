@@ -23,10 +23,10 @@
 			</button>
 		</div>
 		<div class="flex-2 min-w-0 ms-4">
-			<div class="text-lg font-sans text-black truncate dark:text-white">
+			<div class="text-lg font-sans text-black truncate dark:text-white" title={songName}>
 				{songName}
 			</div>
-			<div class="text-sm text-gray-600 truncate dark:text-white">
+			<div class="text-sm text-gray-600 truncate dark:text-white" title={artist}>
 				{artist}
 			</div>
 		</div>
