@@ -30,6 +30,14 @@ async function parseCsv(url, weights) {
           //   }
           // });
 
+          /* "data" array will look like this! Creating sorting algos based off this.
+            [
+              { index: 0, score: 6.7 },
+              { index: 1, score: 4.3 },
+              { index: 2, score: 5.9 }, ... 114,100 times
+            ]
+          */
+
           data.forEach(row => { // [ [1, 2, 3, 4, 5, 6, 7], [], [], ... 114,000] ]
             row.score = 0;
             row.score += row.danceability * weights.danceability;
