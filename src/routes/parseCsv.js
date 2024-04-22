@@ -14,10 +14,10 @@ async function parseCsv(url, weights) {
       Papa.parse(csvText, {
         header: true,
         dynamicTyping: true,
-        complete: function(results) {
+        complete: function (results) {
           let data = results.data;
 
-          data.forEach(row => {
+          data.forEach(row => { // [ [1, 2, 3, 4, 5, 6, 7], [], [], ... 114,000] ]
             row.score = 0;
             row.score += row.danceability * weights.danceability;
             row.score += row.energy * weights.energy;
@@ -34,7 +34,7 @@ async function parseCsv(url, weights) {
           const duration = (endTime - startTime).toFixed(2) + " ms";
           resolve({ data: data, duration: duration });
         },
-        error: function(error) {
+        error: function (error) {
           reject(new Error("Parsing error: " + error.message));
         }
       });
