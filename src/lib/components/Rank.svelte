@@ -1,7 +1,7 @@
 <script>
-  import { parseCsv } from './parseCsv.js';
+  import { parseCsv } from '../parseCsv.js';
   import WeightSliders from './WeightSliders.svelte';
-  import ParseButton from './ParseButton.svelte';
+  import ParseButton from '$lib/components/ParseButton.svelte';
 
   let weights = {
     danceability: 0,

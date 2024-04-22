@@ -1,5 +1,5 @@
 <script>
-	import { parseCsv } from './parseCsv.js';
+	import { parseCsv } from '../parseCsv.js';
 	export let weights;
 	export let result;
 

@@ -1,8 +1,8 @@
 <script>
 	//import {base} from '$app/paths';
-	import Rank from './Rank.svelte';
-	import Playlist from './Playlist.svelte';
-	import PlaylistSort from './PlaylistSort.svelte';
+	import Rank from '$lib/components/Rank.svelte';
+	import Playlist from '$lib/components/Playlist.svelte';
+	import PlaylistSort from '$lib/components/PlaylistSort.svelte';
 
 	let playlistComp;
 	let playlistSortComp;

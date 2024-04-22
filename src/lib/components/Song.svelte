@@ -1,6 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition'
-	import previewIcon from '../lib/images/logo_small.png';
+	import previewIcon from '../images/logo_small.png';
 	//export let index;
 	export var name = "Song Name";
 	export let artist = "Artist";

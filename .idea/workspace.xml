@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67ede98-e659-4826-b219-ccaa99c2a28a" name="Changes" comment="Tailwind integration">
-      <change afterPath="$PROJECT_DIR$/src/routes/PlaylistSort.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Playlist.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Playlist.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Rank.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Rank.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Song.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Song.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/ParseButton.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ParseButton.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Playlist.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Playlist.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/PlaylistSort.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/PlaylistSort.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Rank.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Rank.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Song.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Song.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/WeightSliders.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/WeightSliders.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/parseCsv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/parseCsv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sorts/a_SelectionSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/functions/a_SelectionSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sorts/b_BubbleSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/functions/b_BubbleSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sorts/c_InsertionSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/functions/c_InsertionSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sorts/d_ShellSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/functions/d_ShellSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sorts/e_MergeSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/functions/e_MergeSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sorts/f_QuickSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/functions/f_QuickSort.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/joeyp/Documents/uflorida/24spring/cop3530/MixtapeEngine",
+    "last_opened_file_path": "C:/Users/joeyp/Documents/uflorida/24spring/cop3530/MixtapeEngine/src/lib/components",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -71,6 +81,10 @@
       <recent name="C:\Users\joeyp\Documents\uflorida\24spring\cop3530\MixtapeEngine" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joeyp\Documents\uflorida\24spring\cop3530\MixtapeEngine\src\lib" />
+      <recent name="C:\Users\joeyp\Documents\uflorida\24spring\cop3530\MixtapeEngine\src\lib\components" />
+      <recent name="C:\Users\joeyp\Documents\uflorida\24spring\cop3530\MixtapeEngine\src\lib\routes" />
+      <recent name="C:\Users\joeyp\Documents\uflorida\24spring\cop3530\MixtapeEngine\lib\routes" />
       <recent name="C:\Users\joeyp\Documents\uflorida\24spring\cop3530\MixtapeEngine\src\lib\images" />
     </key>
   </component>
@@ -117,7 +131,8 @@
       <workItem from="1713326044929" duration="344000" />
       <workItem from="1713393865378" duration="1632000" />
       <workItem from="1713396198587" duration="4512000" />
-      <workItem from="1713658763488" duration="33280000" />
+      <workItem from="1713658763488" duration="33518000" />
+      <workItem from="1713806503712" duration="1179000" />
     </task>
     <task id="LOCAL-00001" summary="readme, changes to base demo">
       <option name="closed" value="true" />
