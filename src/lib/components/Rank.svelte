@@ -56,7 +56,7 @@
       </div>
 
 			{#if result.duration}
-				<div class="mt-2 text-center text-sm font-medium text-gray-900 dark:text-white">Parsing with {selectedAlgorithm} took {result.duration}</div>
+				<div class="mt-6 text-center text-sm font-medium text-gray-900 dark:text-white">Parsing with {selectedAlgorithm} took {result.duration}</div>
 			{/if}
 
     </div>

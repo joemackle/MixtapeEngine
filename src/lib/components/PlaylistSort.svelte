@@ -1,5 +1,5 @@
 <script>
-	import { playlistSortOp } from '$lib/stores.js';
+	import { playlist, playlistSortOp, playlistSorted } from '$lib/stores.js';
 
 	export let sortOptions = [
 		"Artist",
@@ -8,8 +8,27 @@
 		"Song Length",
 	]
 
-	async function handleSort() {
-		// going to have to use svelte store
+	// sort playlist
+	$: {
+		let editPlaylist = [{song: "", artist: ""}]; editPlaylist.length = 0;
+		$playlist.forEach(item => {editPlaylist.push(item);});
+
+		if ($playlistSortOp === "Best Fit") {
+			// do nothing
+		} else if ($playlistSortOp === "Artist") {
+			editPlaylist.sort((a, b) => {
+				if (a.artist.toLowerCase() < b.artist.toLowerCase()) return -1;
+				if (a.artist.toLowerCase() > b.artist.toLowerCase()) return 1;
+				return 0;  // artist names are equal
+			});
+		} else if ($playlistSortOp === "Genre") {
+			// implement?
+		} else if ($playlistSortOp === "Song Length") {
+			// implement?
+		}
+
+		// write editPlaylist to playlistSorted
+		playlistSorted.set(editPlaylist);
 	}
 </script>
 
@@ -22,13 +41,11 @@
 		<ul role="list">
 			{#each sortOptions as option}
 				<li>
-					<input type="radio" id={option} value={option} bind:group={$playlistSortOp} on:change={handleSort}>
+					<input type="radio" id={option} value={option} bind:group={$playlistSortOp}>
 					<label for={option}>{option}</label>
 				</li>
 			{/each}
 		</ul>
-
-		{$playlistSortOp}
 
 	</div>
 </div>
