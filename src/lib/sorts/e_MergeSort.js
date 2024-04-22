@@ -1,29 +1,50 @@
 // merge Sore algorithm
-// its my Birthday today
 
+// changes array in place
 function mergeEverything(arr, left, mid, right) {
+    // this create 2 array that hold [left...mid] and [mid+1...right]
     const leftArraySize = mid - left + 1;
     const rightArraySize = right - mid;
-    const arrleft = new Array(leftArraySize);
-    const arrRight = new Array(rightArraySize);
+    let arrLeft = new Array(leftArraySize);
+    let arrRight = new Array(rightArraySize);
 
     for (let i = 0; i < leftArraySize; i++) {
-        arrleft[i] = arr[left + i];
+        arrLeft[i] = arr[left + i];
     }
     for (let k = 0; k < rightArraySize; k++) {
         arrRight[k] = arr[mid + 1 + k];
     }
 
-    // merging here
+    // merging arrLife && arrRight into "arr that was passed in"!
     let i = 0;
     let j = 0;
     let k = left;
 
     while (i < leftArraySize && j < rightArraySize) {
-        if (arrLeft[i] <= arrRight[j]) {
+        if (arrLeft[i].score >= arrRight[j].score) {
             arr[k] = arrLeft[i];
             i++
         }
+        else {
+            //code
+            arr[k] = arrRight[j];
+            j++;
+        }
+        k++;
+    }
+
+    // this is a O(1) time operation because there will only every be 
+    // about 1 more element in each array that needs to be sorted
+    // <-- addes the remaining elements into the array -->
+    while (i < leftArraySize) {
+        arr[k] = arrleft[i];
+        i++;
+        k++;
+    }
+    while (j < rightArraySize) {
+        arr[k] = arrRight[j];
+        j++;
+        k++;
     }
 }
 
