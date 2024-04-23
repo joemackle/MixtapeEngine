@@ -9,7 +9,7 @@ function insertionSort(data) {
     let key = data[i];
     let j = i - 1;
 
-    while (key.score > data[j].score && j >= 0) {
+    while (key.score > data[j].score && j > 0) {
       data[j + 1] = data[j];
       j--;
     }
