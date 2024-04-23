@@ -17,7 +17,7 @@
 			<Rank />
 		</div>
 
-		<div class="row-span-2">
+		<div class="row-span-2 max-w-[28rem]">
 			<Playlist />
 		</div>
 
