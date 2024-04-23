@@ -20,19 +20,19 @@ function partition(arr, low, high) {
         or nearly-reverse-sorted data)" -- Stack Overflow
     */
     // let pivotIndex = Math.floor(Math.random() * (arr.length - 1));
-    let pivot = arr[low].score;
+    let pivot = arr[low];
     let up = low;
     let down = high;
 
     while (up < down) {
         for (let j = up; j < high; j++) {
-            if (arr[up].score < pivot) {
+            if (arr[up].score < pivot.score) {
                 break;
             }
             up++;
         }
         for (let j = high; j > low; j--) {
-            if (arr[down].score > pivot) {
+            if (arr[down].score > pivot.score) {
                 break;
             }
             down--;
@@ -42,10 +42,11 @@ function partition(arr, low, high) {
             arr[up] = arr[down];
             arr[down] = temp;
         }
-        let change = arr[low];
-        arr[low] = arr[down];
-        arr[down] = change;
     }
+    let change = arr[low];
+    arr[low] = arr[down];
+    arr[down] = change;
+    return down;
 }
 
 export { quickSort };
