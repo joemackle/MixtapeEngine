@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 
 export const playlist = writable([
-	{
+	/*{
 		songName: 'Darlin\' - Remastered 2001',
 		artist: 'The Beach Boys',
 		track_id: "4BcAcEbp6j6luowfAliUfW",
@@ -20,7 +20,7 @@ export const playlist = writable([
 		songName: "Chamber Of Reflection",
 		artist: "Mac DeMarco",
 		track_id: "7H7NyZ3G075GqPx2evsfeb",
-	},
+	},*/
 ]);
 
 export const playlistSorted = writable([]);
