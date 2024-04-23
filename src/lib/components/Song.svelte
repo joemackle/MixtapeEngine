@@ -1,12 +1,12 @@
 <script>
 	import { fade } from 'svelte/transition'
+
 	import previewIcon from '../images/logo_small.png';
+
 	//export let index;
 	export let songName = "Song Name";
 	export let artist = "Artist";
 	export let track_id = "0";
-
-	// retrieve cover art using MusicBrainz cover art archive
 
 	// 30-sec song preview (connect to Spotify)
 	function previewSong() {
@@ -17,14 +17,14 @@
 
 <li class="py-3 sm:py-4" transition:fade>
 	<div class="flex items-center">
-		<div>
+		<div class="flex">
 			<button on:click={previewSong}>
 				<img class="min-w-10 h-10" src={previewIcon} alt="Preview Song" title={track_id}>
 			</button>
 		</div>
 		<div class="flex-2 min-w-0 ms-4">
 			<div class="text-lg font-sans text-black truncate dark:text-white" title={songName}>
-				{songName}
+				<a href="https://open.spotify.com/track/{track_id}">{songName}</a>
 			</div>
 			<div class="text-sm text-gray-600 truncate dark:text-white" title={artist}>
 				{artist}

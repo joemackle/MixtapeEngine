@@ -1,16 +1,16 @@
 <script>
-  import { parseCsv } from '../parseCsv.js';
+  //import { parseCsv } from '../parseCsv.js';
   import WeightSliders from './WeightSliders.svelte';
   import ParseButton from '$lib/components/ParseButton.svelte';
 
   let weights = {
-    danceability: 0,
-    energy: 0,
-    speechiness: 0,
-    acousticness: 0,
-    instrumentalness: 0,
-    liveness: 0,
-    valence: 0
+    danceability: 0.5,
+    energy: 0.5,
+    speechiness: 0.5,
+    acousticness: 0.5,
+    instrumentalness: 0.5,
+    liveness: 0.5,
+    valence: 0.5
   }
 
   let result = {
